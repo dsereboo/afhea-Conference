@@ -1,0 +1,13 @@
+//AfHEA Colours
+$main:#EE596D;
+$white:#fff;
+
+//Changin bulma default colours
+$danger:$main;
+
+//Navbar customizations
+$navbar-item-img-max-height:3rem;
+$navbar-burger-color:$white;
+$navbar-item-color:$white;
+
+@import "~bulma/bulma.sass";
