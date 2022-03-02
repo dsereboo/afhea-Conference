@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Agenda from "../components/agenda";
+import TwitterGraphics from "../components/didYouKnow";
 import EngageSocials from "../components/engageSocials";
+import MetaGraphics from "../components/fbAndIg";
 import Navbar from "../components/navbar";
+import Partners from "../components/partners";
+import Speakers from "../components/speakers";
 import Videos from "../components/videos";
 import styles from "../styles/Home.module.css";
 
@@ -38,6 +42,18 @@ export default function Home() {
         <EngageSocials />
         <div className="container is-fullhd has-background-light">
           <Agenda />
+        </div>
+        <div className="container is-fullhd has-background-light">
+         <Speakers/>
+        </div>
+        <div className="container is-fullhd">
+        <Partners/>
+        </div>
+        <div className="container is-fullhd">
+        <TwitterGraphics/>
+        </div>
+        <div className="container is-fullhd">
+       <MetaGraphics/>
         </div>
         <div className="container is-fullhd">
           <Videos />

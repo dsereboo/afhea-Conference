@@ -16,14 +16,11 @@ const ImageCard = () => {
   };
 
   const saveFile=()=>{
-    saveAs(
-        "https://ahaic.org/wp-content/uploads/2021/03/AHAIC-2021_Session-template-1.png",
-        "image.png"
-    ) 
+   
   }
 
   return (
-    <div className="is-clickable">
+    <div className={"is-clickable "+`${styles.card}`}>
       <Image src={image} onClick={handleClick}/>
       <div className={active?"modal is-active":"modal"}>
         <div className="modal-background"></div>
@@ -33,9 +30,13 @@ const ImageCard = () => {
         <button className="modal-close is-large" aria-label="close" onClick={handleClick}></button>
        {/* <button className={"button "+ `${styles.download}`}> */}
        <div className={styles.download} onClick={saveFile}>
+           <Link href="/api/download">
+           <a  >
         <IconContext.Provider  value={{size:"2em", color:"#fff"}} >
             <HiOutlineDownload/>
         </IconContext.Provider>
+        </a>
+        </Link>
         </div>
         {/* </button> */}
       </div>
