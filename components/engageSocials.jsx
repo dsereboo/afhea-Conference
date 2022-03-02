@@ -59,7 +59,7 @@ const EngageSocials = () => {
             {
                 twitterAccounts.map(
                     (item)=>{
-                        return(<div key={item.index}>
+                        return(<div key={item.id}>
                             <Link href={item.link}><a className="has-text-danger is-size-5">Follow {item.title}</a></Link>
                         </div>)
 
