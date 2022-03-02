@@ -1,4 +1,6 @@
 import Link from "next/link";
+import styles from "../styles/tweetCard.module.css"
+import { FaTwitter } from "react-icons/fa";
 
 const Videos = () => {
   return (
@@ -21,7 +23,12 @@ const Videos = () => {
           <p className="is-size-5">
           Are you ready for AHAIC 2021 Virtual Conference? Here is a snippet from the 2019 conference. https://youtu.be/byj1zViyaj0
           </p>
-        <Link href="https://twitter.com/intent/tweet?text=Hello%20world"><a className="twitter-share-button"></a></Link>
+          <Link  href="https://twitter.com/intent/tweet?text=Hello%20world">
+        <button className={"button is-success mt-2 "+`${styles.twitterButton}`}>
+           <FaTwitter />
+          <p className="ml-2 has-text-weight-bold">Tweet</p>
+        </button>
+        </Link>
         </div>
         <div className="column is-4">
           <iframe
@@ -34,6 +41,12 @@ const Videos = () => {
             allowFullScreen
           ></iframe>
           <p className="is-size-5">Are you ready for AHAIC 2021 Virtual Conference? Here is a snippet from the 2019 conference. https://youtu.be/byj1zViyaj0</p>
+          <Link  href="https://twitter.com/intent/tweet?text=Hello%20world">
+        <button className={"button is-success mt-2 "+`${styles.twitterButton}`}>
+           <FaTwitter />
+          <p className="ml-2 has-text-weight-bold">Tweet</p>
+        </button>
+        </Link>
         </div>
         <div className="column is-4">
           <iframe
@@ -45,7 +58,13 @@ const Videos = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-            <p className="is-size-5">Are you ready for AHAIC 2021 Virtual Conference? Here is a snippet from the 2019 conference. https://youtu.be/byj1zViyaj0</p> 
+            <p className="is-size-5">Are you ready for AHAIC 2021 Virtual Conference? Here is a snippet from the 2019 conference. https://youtu.be/byj1zViyaj0</p>
+            <Link  href="https://twitter.com/intent/tweet?text=Hello%20world">
+        <button className={"button is-success mt-2  "+`${styles.twitterButton}`}>
+           <FaTwitter />
+          <p className="ml-2 has-text-weight-bold">Tweet</p>
+        </button>
+        </Link> 
         </div>
       </div>
     </section>
