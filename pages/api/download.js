@@ -12,8 +12,8 @@ const handler = async (req, res) => {
   const response = await fetch(imageURL); // replace this with your API call & options
   if (!response.ok) throw new Error(`unexpected response ${response.statusText}`);
 
-  res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'attachment; filename=dummy.pdf');
+  res.setHeader('Content-Type', 'image/png');
+  res.setHeader('Content-Disposition', 'attachment; filename=dummy.png');
   await pipeline(response.body, res);
 };
 

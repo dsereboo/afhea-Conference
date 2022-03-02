@@ -4,9 +4,11 @@ import Agenda from "../components/agenda";
 import TwitterGraphics from "../components/didYouKnow";
 import EngageSocials from "../components/engageSocials";
 import MetaGraphics from "../components/fbAndIg";
+import KeyTweets from "../components/keyTweets";
 import Navbar from "../components/navbar";
 import Partners from "../components/partners";
 import Speakers from "../components/speakers";
+import TweetCard from "../components/tweetCard";
 import Videos from "../components/videos";
 import styles from "../styles/Home.module.css";
 
@@ -57,6 +59,9 @@ export default function Home() {
         </div>
         <div className="container is-fullhd">
           <Videos />
+        </div>
+        <div className="container is-fullhd">
+          <KeyTweets/>
         </div>
       </main>
     </div>
